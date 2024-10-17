@@ -35,3 +35,5 @@ cur.execute(users_model)
 
 #Close connection
 con.close()
+
+
