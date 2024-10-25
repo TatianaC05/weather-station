@@ -33,10 +33,13 @@ while True:
         print(f"Temperature: {temperature}°C")
         print(f"Humidity: {humidity}%")
         
+        #Here Insert Into
         # 1. Create new model data called test_data (en database.py)
         #Fields: id,tem,hum,created_at
         # 2. method to insert data into test_data(aqui en insert into data -- variables temperature y humidity -- datos guardados en la tabla)
         # 3. Update method: Insert data when detect changes in temp or hum 
+        # 4. Create a menu option: List sensor data
+        # 5. Create new option Graphics with matplotlib
     time.sleep(1)
     
     

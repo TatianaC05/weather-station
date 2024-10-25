@@ -47,6 +47,7 @@ sensors_model = '''
 #Execute query
 cur.execute(users_model)
 cur.execute(sensors_model)
+#cur.execute(insert_data)
 
 
 #Close connection
