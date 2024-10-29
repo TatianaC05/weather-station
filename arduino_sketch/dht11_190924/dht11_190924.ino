@@ -30,9 +30,8 @@ void loop() {
     return;
   }
 
-  Serial.print("Temperatura actual: ");
-  Serial.println(temp);
-  Serial.print("Humedad actual: ");
+  Serial.print(temp);
+  Serial.print(",");
   Serial.println(hum);
 
 }
