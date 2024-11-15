@@ -19,7 +19,8 @@ def main_menu():
     print("::: MAIN MENU :::")
     print("[1]. Create user")
     print("[2]. List users")
-    print("[3]. Salir")
+    print("[3]. List data humidity - temperature")
+    print("[4]. Salir")
     
     while opt_status:
         opt = int(input('Press any option: '))

@@ -31,16 +31,10 @@ users_model = '''
 #USensors model
 sensors_model = '''
       CREATE TABLE IF NOT EXISTS sensors (
-          id INTEGER PRIMARY KEY,
-          name TEXT NOT NULL,
-          model TEXT NOT NULL,
-          description TEXT NOT NULL,
-          url_datasheet TEXT NOT NULL,
-          url_image TEXT NOT NULL,
-          status BOOLEAN DEFAULT true,
-          created_at TIMESTAMP DEFAULT (datetime('now', 'localtime')),
-          updated_at TIMESTAMP DEFAULT (datetime('now', 'localtime')),
-          deleted_at NULL
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        temperature REAL NOT NULL,
+        humidity REAL NOT NULL,
+        created_at TIMESTAMP DEFAULT (datetime('now', 'localtime'))
       )
 '''
 
