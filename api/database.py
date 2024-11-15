@@ -38,6 +38,19 @@ sensors_model = '''
       )
 '''
 
+
+#insert_data
+
+def insert_data(temperature, humidity):
+    con = sqlite3.connect('weather_station.db')
+    cur = con.cursor()
+    cur.execute("INSERT INTO sensors (temperature, humidity) VALUES (?, ?)", (temperature, humidity))
+    con.commit()
+    con.close()
+    print(f"Datos insertados: Temperatura = {temperature}°C, Humedad = {humidity}%")
+
+
+
 #Execute query
 cur.execute(users_model)
 cur.execute(sensors_model)
